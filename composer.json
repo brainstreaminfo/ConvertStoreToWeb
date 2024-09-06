@@ -1,0 +1,26 @@
+{
+    "name": "bagisto/convertstoretoweb-extension",
+    "license": "MIT",
+    "description" : "Bagisto offers a robust e-commerce platform, but we aim to develop an extension that transforms this platform into an informative business website for individual stores. This extension will allow store owners to showcase their business information, services, and unique offerings, providing a comprehensive and engaging web presence beyond just e-commerce functionalities.",
+    "authors": [
+        {
+            "name": "Kishan Kanani",
+            "email": "kishan.kanani@brainstream.tech"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Webkul\\ConvertStoreToWeb\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\ConvertStoreToWeb\\Providers\\ConvertStoreToWebServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}
