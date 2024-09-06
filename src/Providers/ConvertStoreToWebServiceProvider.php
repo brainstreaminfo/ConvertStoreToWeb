@@ -18,10 +18,6 @@ class ConvertStoreToWebServiceProvider extends ServiceProvider
     {
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
 
-        $this->loadRoutesFrom(__DIR__ . '/../Routes/admin-routes.php');
-
-        $this->loadRoutesFrom(__DIR__ . '/../Routes/shop-routes.php');
-
         $this->loadTranslationsFrom(__DIR__ . '/../Resources/lang', 'convertstoretoweb');
 
         $this->loadViewsFrom(__DIR__ . '/../Resources/views', 'convertstoretoweb');
@@ -108,9 +104,6 @@ class ConvertStoreToWebServiceProvider extends ServiceProvider
 
         // Override the 'menu.admin' configuration with the filtered menu
         Config::set('menu.admin', $filteredMenu);  
-
-        // Override system.php configuration
-        $this->mergeSystemConfig();
     }
 
     /**
@@ -132,15 +125,4 @@ class ConvertStoreToWebServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__ . '/../Config/admin-menu.php', 'menu.admin');
     }
-
-    /**
-     * Merge custom system.php configuration.
-     */
-    protected function mergeSystemConfig()
-    {
-        $this->mergeConfigFrom(
-            __DIR__ . '/../Config/system.php', 'core'
-        );
-    }
-
 }
