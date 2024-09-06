@@ -62,6 +62,6 @@ php artisan migrate
 ```
 php artisan vendor:publish --all
 ```
-
+Make changes in index.blade.php file in footer folder for get in touch section
 
 That's it, now just execute the project on your specified domain.
