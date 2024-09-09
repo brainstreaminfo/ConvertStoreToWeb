@@ -23,15 +23,15 @@
 
         <ul class="text-md">
             <li>
-                <a href="http://127.0.0.1:8000" style="margin-right:40px; margin-left:30px;" onmouseover="this.style.color='#1a53ff'; this.style.textDecoration='bold';" 
+                <a href="{{ config('app.url') }}" style="margin-right:40px; margin-left:30px;" onmouseover="this.style.color='#1a53ff'; this.style.textDecoration='bold';" 
                 onmouseout="this.style.color=''; this.style.textDecoration='';">Home</a>
-                <a href="http://127.0.0.1:8000/page/about-us" style="margin-right:40px;" onmouseover="this.style.color='#1a53ff'; this.style.textDecoration='bold';" 
+                <a href="{{ url('/page/about-us') }}" style="margin-right:40px;" onmouseover="this.style.color='#1a53ff'; this.style.textDecoration='bold';" 
                 onmouseout="this.style.color=''; this.style.textDecoration='';">About Us</a>
-                <a href="http://127.0.0.1:8000/search" style="margin-right:40px;" onmouseover="this.style.color='#1a53ff'; this.style.textDecoration='bold';" 
+                <a href="{{ url('/search') }}" style="margin-right:40px;" onmouseover="this.style.color='#1a53ff'; this.style.textDecoration='bold';" 
                 onmouseout="this.style.color=''; this.style.textDecoration='';">Products</a>
-                <a href="http://127.0.0.1:8000/blog" style="margin-right:40px;" onmouseover="this.style.color='#1a53ff'; this.style.textDecoration='bold';" 
+                <a href="{{ url('/blog') }}" style="margin-right:40px;" onmouseover="this.style.color='#1a53ff'; this.style.textDecoration='bold';" 
                 onmouseout="this.style.color=''; this.style.textDecoration='';">Blog</a>
-                <a href="http://127.0.0.1:8000/contact-us" style="margin-right:40px;" onmouseover="this.style.color='#1a53ff'; this.style.textDecoration='bold';" 
+                <a href="{{ url('/contact-us') }}" style="margin-right:40px;" onmouseover="this.style.color='#1a53ff'; this.style.textDecoration='bold';" 
                 onmouseout="this.style.color=''; this.style.textDecoration='';">Contact Us</a>
             </li>
         </ul>
