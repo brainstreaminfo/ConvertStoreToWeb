@@ -53,7 +53,7 @@ php artisan db:seed --class=Webkul\\ConvertStoreToWeb\\Database\\Seeders\\Shop\\
 ```
 php artisan db:seed --class=Webkul\\ConvertStoreToWeb\\Database\\Seeders\\CMS\\DatabaseSeeder
 ```
-* Run the below command and select the Giftcard Service provider from the selection :
+* Run the below command and select the ConvertStoreToWebServiceProvider from the selection :
 
 ```
 php artisan vendor:publish --force
