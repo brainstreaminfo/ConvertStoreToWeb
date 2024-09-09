@@ -54,6 +54,13 @@ php artisan db:seed --class=Webkul\\ConvertStoreToWeb\\Database\\Seeders\\Shop\\
 php artisan db:seed --class=Webkul\\ConvertStoreToWeb\\Database\\Seeders\\CMS\\DatabaseSeeder
 ```
 ```
+
+* Run the below command and select the ConvertStoreToWeb Service provider from the selection :
+
+```
+php artisan vendor:publish --force
+```
+
 composer require webbycrown/blog-for-bagisto:dev-main
 ```
 ```
