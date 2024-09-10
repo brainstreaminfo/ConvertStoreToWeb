@@ -286,7 +286,7 @@ class ThemeCustomizationTableSeeder extends BaseThemeCustomizationTableSeeder
                                     'title'      => trans('installer::app.seeders.shop.theme-customizations.footer-links.options.whats-new', [], $locale),
                                     'sort_order' => 1,
                                 ], [
-                                    'url'        => $appUrl.'/search',
+                                    'url'        => $appUrl.'/product',
                                     'title'      => trans('convertstoretoweb::app.convertstoretoweb.footerpages.products', [], $locale),
                                     'sort_order' => 2,
                                 ], [

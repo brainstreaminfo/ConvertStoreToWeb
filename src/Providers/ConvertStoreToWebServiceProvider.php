@@ -95,6 +95,10 @@ class ConvertStoreToWebServiceProvider extends ServiceProvider
             $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/components/layouts/header/mobile/index.blade.php'));
         });
 
+        View::composer('shop::components.form.index', function ($view) {
+            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/components/form/index.blade.php'));
+        });
+
         // Add the menu filtering logic here
         $config = Config::get('menu.admin');
         $filteredMenu = [];
@@ -112,6 +116,9 @@ class ConvertStoreToWebServiceProvider extends ServiceProvider
         $this->publishes([ 
             __DIR__ . '/../Config/system.php' => base_path('packages/Webkul/Admin/src/Config/system.php'), 
         ]);
+
+        //override change of route file
+        $this->loadRoutesFrom(__DIR__ . '/../Routes/store-front-routes.php');
     }
 
     /**

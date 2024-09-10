@@ -27,7 +27,7 @@
                 onmouseout="this.style.color=''; this.style.textDecoration='';">Home</a>
                 <a href="{{ url('/page/about-us') }}" style="margin-right:40px;" onmouseover="this.style.color='#1a53ff'; this.style.textDecoration='bold';" 
                 onmouseout="this.style.color=''; this.style.textDecoration='';">About Us</a>
-                <a href="{{ url('/search') }}" style="margin-right:40px;" onmouseover="this.style.color='#1a53ff'; this.style.textDecoration='bold';" 
+                <a href="{{ url('/product') }}" style="margin-right:40px;" onmouseover="this.style.color='#1a53ff'; this.style.textDecoration='bold';" 
                 onmouseout="this.style.color=''; this.style.textDecoration='';">Products</a>
                 <a href="{{ url('/blog') }}" style="margin-right:40px;" onmouseover="this.style.color='#1a53ff'; this.style.textDecoration='bold';" 
                 onmouseout="this.style.color=''; this.style.textDecoration='';">Blog</a>
