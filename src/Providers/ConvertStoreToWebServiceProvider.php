@@ -108,6 +108,10 @@ class ConvertStoreToWebServiceProvider extends ServiceProvider
 
         // Override the 'menu.admin' configuration with the filtered menu
         Config::set('menu.admin', $filteredMenu);  
+
+        $this->publishes([ 
+            __DIR__ . '/../Config/system.php' => base_path('packages/Webkul/Admin/src/Config/system.php'), 
+        ]);
     }
 
     /**
