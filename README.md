@@ -21,7 +21,7 @@ Utilize Bagisto’s powerful content management capabilities to manage and updat
 * Composer 2.6.3 or higher
 
 # Installation :
-Unzip the respective extension zip and then merge extracted folder in the packages/Webkul folder
+Unzip the Brainstream.zip file and move the extracted folder to the bagisto/packages directory.
 
 * Goto config/app.php file and add following line under 'providers'
 
