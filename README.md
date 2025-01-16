@@ -26,13 +26,13 @@ Unzip the respective extension zip and then merge extracted folder in the packag
 * Goto config/app.php file and add following line under 'providers'
 
 ```
-Webkul\ConvertStoreToWeb\Providers\ConvertStoreToWebServiceProvider::class,
+Brainstream\ConvertStoreToWeb\Providers\ConvertStoreToWebServiceProvider::class,
 ```
 
 * Goto composer.json file and add following line under 'psr-4'
 
 ```
-"Webkul\\ConvertStoreToWeb\\": "packages/Webkul/ConvertStoreToWeb/src"
+"Brainstream\\ConvertStoreToWeb\\": "packages/Brainstream/ConvertStoreToWeb/src"
 ```
 * Run these below commands to complete the setup:
 
@@ -45,13 +45,13 @@ php artisan optimize:clear
 
 * Run the below command:
 ```
-php artisan db:seed --class=Webkul\\ConvertStoreToWeb\\Database\\Seeders\\Attribute\\DatabaseSeeder
+php artisan db:seed --class=Brainstream\\ConvertStoreToWeb\\Database\\Seeders\\Attribute\\DatabaseSeeder
 ```
 ```
-php artisan db:seed --class=Webkul\\ConvertStoreToWeb\\Database\\Seeders\\Shop\\DatabaseSeeder
+php artisan db:seed --class=Brainstream\\ConvertStoreToWeb\\Database\\Seeders\\Shop\\DatabaseSeeder
 ```
 ```
-php artisan db:seed --class=Webkul\\ConvertStoreToWeb\\Database\\Seeders\\CMS\\DatabaseSeeder
+php artisan db:seed --class=Brainstream\\ConvertStoreToWeb\\Database\\Seeders\\CMS\\DatabaseSeeder
 ```
 * Run the below command and select the ConvertStoreToWebServiceProvider from the selection :
 

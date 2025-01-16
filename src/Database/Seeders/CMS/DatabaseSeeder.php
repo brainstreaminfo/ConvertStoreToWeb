@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\ConvertStoreToWeb\Database\Seeders\CMS;
+namespace Brainstream\ConvertStoreToWeb\Database\Seeders\CMS;
 
 use Illuminate\Database\Seeder;
 

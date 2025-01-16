@@ -11,13 +11,13 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Webkul\\ConvertStoreToWeb\\": "src/"
+            "Brainstream\\ConvertStoreToWeb\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Webkul\\ConvertStoreToWeb\\Providers\\ConvertStoreToWebServiceProvider"
+                "Brainstream\\ConvertStoreToWeb\\Providers\\ConvertStoreToWebServiceProvider"
             ],
             "aliases": {}
         }

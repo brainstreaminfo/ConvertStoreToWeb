@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\ConvertStoreToWeb\Providers;
+namespace Brainstream\ConvertStoreToWeb\Providers;
 
 use Konekt\Concord\BaseModuleServiceProvider;
 

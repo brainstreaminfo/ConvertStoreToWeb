@@ -1,6 +1,6 @@
 <?php
 
-namespace Webkul\ConvertStoreToWeb\Providers;
+namespace Brainstream\ConvertStoreToWeb\Providers;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
@@ -28,75 +28,75 @@ class ConvertStoreToWebServiceProvider extends ServiceProvider
 
         // Override the specific view
         View::composer('shop::components.layouts.services', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/components/layouts/services.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/components/layouts/services.blade.php'));
         });
 
         View::composer('shop::components.products.card', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/components/products/card.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/components/products/card.blade.php'));
         });
 
         View::composer('shop::products.view', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/products/view.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/products/view.blade.php'));
         });
 
         View::composer('shop::components.layouts.header.desktop.bottom', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/components/layouts/header/desktop/bottom.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/components/layouts/header/desktop/bottom.blade.php'));
         });
 
         View::composer('admin::dashboard.index', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/dashboard/index.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/dashboard/index.blade.php'));
         });
 
         View::composer('admin::catalog.products.edit.links', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/catalog/products/edit/links.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/catalog/products/edit/links.blade.php'));
         });
 
         View::composer('admin::reporting.customers.index', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/reporting/customers/index.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/reporting/customers/index.blade.php'));
         });
 
         View::composer('admin::reporting.products.index', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/reporting/products/index.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/reporting/products/index.blade.php'));
         });
 
         View::composer('admin::dashboard.stock-threshold-products', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/dashboard/stock-threshold-products.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/dashboard/stock-threshold-products.blade.php'));
         });
 
         View::composer('admin::catalog.products.index', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/catalog/products/index.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/catalog/products/index.blade.php'));
         });
 
         View::composer('shop::categories.toolbar', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/categories/toolbar.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/categories/toolbar.blade.php'));
         });
 
         View::composer('shop::search.index', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/search/index.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/search/index.blade.php'));
         });
 
         View::composer('shop::search.index', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/search/index.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/search/index.blade.php'));
         });
 
         View::composer('shop::components.products.carousel', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/components/products/carousel.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/components/products/carousel.blade.php'));
         });
 
         View::composer('shop::categories.filters', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/categories/filters.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/categories/filters.blade.php'));
         });
 
         View::composer('shop::components.layouts.footer.index', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/components/layouts/footer/index.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/components/layouts/footer/index.blade.php'));
         });
 
         View::composer('shop::components.layouts.header.mobile.index', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/components/layouts/header/mobile/index.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/components/layouts/header/mobile/index.blade.php'));
         });
 
         View::composer('shop::components.form.index', function ($view) {
-            $view->setPath(base_path('packages/Webkul/ConvertStoreToWeb/src/Resources/views/components/form/index.blade.php'));
+            $view->setPath(base_path('packages/Brainstream/ConvertStoreToWeb/src/Resources/views/components/form/index.blade.php'));
         });
 
         // Add the menu filtering logic here
